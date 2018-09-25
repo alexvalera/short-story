@@ -3,7 +3,7 @@
    <div>
     <p class = "nav__logo-type">shortstory</p>
    </div>
-   <div>
+   <div v-show="allowLogin">
     <router-link to ="/login" class = "btn">Log In</router-link>
    </div>
   </nav>
@@ -13,7 +13,7 @@
 export default {
   name: 'Nav',
   props: {
-    msg: String
+    allowLogin: Boolean
   }
 }
 </script>

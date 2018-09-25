@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
-    <Nav v-bind:allowLogin="true"/>
-    <Intro/>
+  <div class="login">
+    <Nav v-bind:allowLogin="false"/>
+    <Login/>
   </div>
 </template>
 
@@ -9,12 +9,12 @@
 // @ is an alias to /src
 //import HelloWorld from '@/components/HelloWorld.vue'
 import Nav from '@/components/Nav.vue'
-import Intro from '@/components/Intro.vue'
+import Login from '@/components/Login.vue'
 export default {
   name: 'home',
   components: {
-    Nav,
-    Intro
+    Nav, 
+    Login
   }
 }
 </script>
